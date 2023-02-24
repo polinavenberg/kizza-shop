@@ -2,10 +2,31 @@ import "../css/reset.css"
 import "../css/base.css"
 import "../css/blocks/logreg.css"
 import "../css/fonts/Open_Sans/stylesheet.css"
-
 import { useState } from "react";
 
-function sendReg (username, password) {}
+export function sendReg(username, password) {
+    fetch("http://51.250.13.184:8000/auth/reg/",
+        {
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Headers": "access-control-allow-origin",
+            },
+            "body": JSON.stringify({
+                "username": username,
+                "password": password,
+            })
+        })
+        .then(response => response.json())
+        .then(response => {
+            window.location.href = "/"
+            window.alert("Registered: " + password + " + " + username + "\nResponse: " + JSON.stringify(response))
+        })
+        .catch((error) => {
+            alert(error)
+            console.log("Error on user " + username)
+        })
+}
 
 function Registration() {
     const [username, setUsername] = useState("")

@@ -5,7 +5,28 @@ import "../css/fonts/Open_Sans/stylesheet.css"
 
 import { useState } from "react";
 
-function sendLogin (username, password) {}
+export function sendLogin(username, password) {
+    fetch("http://51.250.13.184:8000/auth/login/",
+        {
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Headers": "access-control-allow-origin",
+            },
+            "body": JSON.stringify({
+                "username": username,
+                "password": password,
+            })
+        })
+        .then(response => response.json())
+        .then(response => {
+            window.alert("Logged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+        })
+        .catch((error) => {
+            alert(error)
+            console.log("ERROR: " + username + " " + password)
+        })
+}
 
 function Login() {
     const [username, setUsername] = useState("")
