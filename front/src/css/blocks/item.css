@@ -1,0 +1,84 @@
+.item-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-pic {
+    margin: 50px;
+    margin-right: 100px;
+}
+
+.item-column {
+    padding-right: 100px;
+}
+
+.item-name {
+    font-size: 40px;
+}
+
+.item-price {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.item-descriprion {
+    padding-top: 35px;
+    padding: 10px;
+}
+
+.item-operate {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+}
+
+.choose-size {
+    padding: 10px;
+}
+
+
+.sizes ul{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.sizes ul li {
+    background-color: whitesmoke;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.size-grid {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.card-options{ 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+.quantity {
+    background-color: whitesmoke;
+    padding-left: 10px;
+    max-width: 150px;
+}
+
+.add-to-card {
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+}
+
+.like-item {
+    background-color: black;
+    margin-top: 20px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}

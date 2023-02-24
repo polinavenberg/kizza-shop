@@ -1,0 +1,101 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    padding: 20px;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.footer-info {
+    display: flex;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+.company {
+    padding-right: 150px;
+    padding-bottom: 50px ;
+    padding-top: 50px;
+}
+
+.head1 {
+    color: white;
+    padding-bottom: 50px;
+}
+
+.company_links {
+    color: white;
+}
+
+.company_links ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.help {
+    padding-right: 150px;
+    padding-top: 50px;
+}
+
+.head2 {
+    color: white;
+    padding-bottom: 50px;
+}
+
+.help_links {
+    color: white;
+}
+
+.help_links ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.mailing {
+    padding-top: 50px;
+
+}
+
+.head3 {
+    color: white;
+    padding-bottom: 50px;
+}
+
+.mail_text {
+    color:white;
+}
+
+.subscribe {
+    display: flex;
+    padding-top: 50px;
+}
+
+.email-enter {
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-btn {
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+
+

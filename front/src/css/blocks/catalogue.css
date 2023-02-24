@@ -1,0 +1,36 @@
+.header-text {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.catalogue {
+    margin: 100px;
+    display: flex;
+    column-gap: 5px;    
+    justify-content: center;
+}
+
+.item-card {
+    padding: 2px;
+}
+
+.item-list{
+    display: flex;
+    column-gap: 2px;
+}
+
+.item-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.card-botton {
+    padding: 15px;
+}

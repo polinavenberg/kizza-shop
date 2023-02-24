@@ -1,0 +1,68 @@
+header{
+    padding-top: 0px;
+    padding-bottom: 22px;
+    display: flex;
+}
+
+.header-sale{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 35px;
+    align-items: center;
+    color: whitesmoke;
+    box-shadow: gray 0px 2px 3px;
+}
+
+
+/* ---------- Navigation ------------------ */
+.header-nav{
+    display: flex;
+    /* padding-top: 168px; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: black;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li:not(:last-child){
+    margin-right: 100px;
+}
+
+.header-nav a:hover {
+    text-shadow: grey 0px 2px 2px;
+}
+
+/* ---------- Row ------------------ */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 63px;
+    margin-left: 63px;
+}
+
+.header-logo {
+    padding-top: 5px;
+    margin-left: 130px;
+}
+
+.header-buttons {
+    padding-top: 83px;
+}
+
+.header-buttons ul{
+    display: flex;
+}
+
+.header-buttons li:not(:last-child){
+    margin-right: 30px;
+}
+
+.header-search{
+    padding-top: 83px;
+}
+
