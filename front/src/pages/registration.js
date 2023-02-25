@@ -20,14 +20,14 @@ export function sendReg(username, password) {
         .then(response => response.json())
         .then(response => {
             window.location.href = "/"
-            window.alert("Registered: " + password + " + " + username + "\nResponse: " + JSON.stringify(response))
+            window.alert("Registered: " + password + " + " + username
+                + "\nResponse: " + JSON.stringify(response))
         })
         .catch((error) => {
             alert(error)
-            console.log("Error on user " + username)
+            console.log("ERROR: " + username + " " + password)
         })
 }
-
 function Registration() {
     const [username, setUsername] = useState("")
     const usernameChange = (event) => { setUsername(event.target.value); };
