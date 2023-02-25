@@ -19,7 +19,7 @@ export function sendReg(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            window.location.href = "/home"
+            window.location.href = "/"
             window.alert("Registered: " + password + " + " + username
                 + "\nResponse: " + JSON.stringify(response))
         })
