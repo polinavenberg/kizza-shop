@@ -19,7 +19,7 @@ export function sendReg(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            window.location.href = "/"
+            window.location.href = "/home"
             window.alert("Registered: " + password + " + " + username
                 + "\nResponse: " + JSON.stringify(response))
         })
@@ -30,10 +30,14 @@ export function sendReg(username, password) {
 }
 function Registration() {
     const [username, setUsername] = useState("")
-    const usernameChange = (event) => { setUsername(event.target.value); };
+    const usernameChange = (event) => {
+        setUsername(event.target.value);
+    };
 
     const [password, setPassword] = useState("")
-    const passwordChange = (event) => { setPassword(event.target.value); };
+    const passwordChange = (event) => {
+        setPassword(event.target.value);
+    };
     return (
 <section className="registration">
     <main>
