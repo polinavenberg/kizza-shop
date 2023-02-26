@@ -21,11 +21,11 @@ export function sendLogin(username, password) {
         .then(response => response.json())
         .then(response => {
             if ("access" in response) {
-                alert("Successfully registered.")
+                alert("Successfully logged in.")
                 console.log("Successful login user: " + username
                     + "\nResponse: " + JSON.stringify(response))
             } else {
-                alert("Failed registration. See message in logs.")
+                alert("Failed log in. See message in logs.")
                 console.log("Failed login" +
                     "\nResponse: " + JSON.stringify(response))
             }
