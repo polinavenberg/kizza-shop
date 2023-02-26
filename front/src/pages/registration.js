@@ -19,23 +19,12 @@ export function sendReg(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            window.location.href = "/"
             if ("username" in response) {
-                setTimeout(
-                    () => {
-                        console.log("Successful registered user " + username
-                            + "\nResponse: " + JSON.stringify(response))
-                    },
-                    2000
-                )
+                console.log("Successfully registered user: " + username
+                    + "\nResponse: " + JSON.stringify(response))
             } else {
-                setTimeout(
-                    () => {
-                        console.log("Failed registration" +
-                            "\nResponse: " + JSON.stringify(response))
-                    },
-                    2000
-                )
+                console.log("Failed registration" +
+                    "\nResponse: " + JSON.stringify(response))
             }
         })
         .catch((error) => {
