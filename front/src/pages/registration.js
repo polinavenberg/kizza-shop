@@ -21,11 +21,21 @@ export function sendReg(username, password) {
         .then(response => {
             window.location.href = "/"
             if ("username" in response) {
-                console.log("Successfully registered user: " + username
-                    + "\nResponse: " + JSON.stringify(response))
+                setTimeout(
+                    () => {
+                        console.log("Successful registered user " + username
+                            + "\nResponse: " + JSON.stringify(response))
+                    },
+                    2000
+                )
             } else {
-                console.log("Failed registration" +
-                    "\nResponse: " + JSON.stringify(response))
+                setTimeout(
+                    () => {
+                        console.log("Failed registration" +
+                            "\nResponse: " + JSON.stringify(response))
+                    },
+                    2000
+                )
             }
         })
         .catch((error) => {

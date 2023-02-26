@@ -22,11 +22,21 @@ export function sendLogin(username, password) {
         .then(response => {
             window.location.href = "/"
             if ("access" in response) {
-                console.log("Successful login user: " + username
-                    + "\nResponse: " + JSON.stringify(response))
+                setTimeout(
+                    () => {
+                        console.log("Successful login user: " + username
+                            + "\nResponse: " + JSON.stringify(response))
+                    },
+                    2000
+                )
             } else {
-                console.log("Failed login" +
-                    "\nResponse: " + JSON.stringify(response))
+                setTimeout(
+                    () => {
+                        console.log("Failed login" +
+                            "\nResponse: " + JSON.stringify(response))
+                    },
+                    2000
+                )
             }
         })
         .catch((error) => {
