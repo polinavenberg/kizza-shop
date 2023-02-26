@@ -19,7 +19,7 @@ export function sendReg(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            if ("username" in response) {
+            if (("username" in response) and (response["username"] == username)) {
                 alert("Successfully registered")
                 console.log("Successfully registered user: " + username
                     + "\nResponse: " + JSON.stringify(response))
