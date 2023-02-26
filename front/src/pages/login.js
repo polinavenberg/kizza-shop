@@ -20,7 +20,14 @@ export function sendLogin(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            window.alert("Logged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+            window.location.href = "/"
+            if ("access" in response) {
+                console.log("Successful login user: " + username
+                    + "\nResponse: " + JSON.stringify(response))
+            } else {
+                console.log("Failed login" +
+                    "\nResponse: " + JSON.stringify(response))
+            }
         })
         .catch((error) => {
             alert(error)
