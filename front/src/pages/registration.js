@@ -20,9 +20,11 @@ export function sendReg(username, password) {
         .then(response => response.json())
         .then(response => {
             if ("username" in response) {
+                alert("Successfully logged in")
                 console.log("Successfully registered user: " + username
                     + "\nResponse: " + JSON.stringify(response))
             } else {
+                alert("Failed login. See message in logs")
                 console.log("Failed registration" +
                     "\nResponse: " + JSON.stringify(response))
             }
